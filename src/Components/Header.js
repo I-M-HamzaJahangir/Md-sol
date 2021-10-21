@@ -11,6 +11,7 @@ import { FormControl } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import logo from "../assets/images/logo.png";
+import icon from "..//assets/images/down-arrow.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 const Header = () => {
@@ -22,13 +23,13 @@ const Header = () => {
         {/* Navigation-Bar-Start */}
         {/* Navigation-Bar-Start */}
         <Navbar bg="transparent" expand={false}>
-          <Container fluid>
+          <Container fluid className="setNavWidth">
             <Navbar.Brand href="#">
-              <Image src={logo} fluid />
+              <Image src={logo} className="logo-img" />
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="offcanvasNavbar"
-              className="border-0"
+              className="border-0 small"
             />
             <Navbar.Offcanvas
               id="offcanvasNavbar"
@@ -56,21 +57,34 @@ const Header = () => {
         {/* Nav-Bar-Ends */}
         {/* Banner-Text-Start */}
         {/* Banner-Text-Start */}
-        <div className="text-section">
-          <Container>
-            <Row>
-              <Col lg={6} md={6} sm={12} className="left-section-text">
-                <h1>WE</h1>
-              </Col>
 
-              <Col lg={6} md={6} sm={12} className="right-section-text">
-                <h1>LAUNCH BRANDS</h1>
-              </Col>
-            </Row>
-          </Container>
+        <div className="wrapper">
+          <div className="left-text-section">
+            <div className="border-top-text">WEB & MOBILE DEVELOPMENT</div>
+            <div className="left-heading">
+              <h1>WE</h1>
+            </div>
+            <div className="border-bottom-text">MARKETING & UX/UI DESIGN</div>
+          </div>
+          <div className="right-text-section">
+            <div className="right-heading">
+              <h1>
+                LAUNCH <br /> BRANDS
+              </h1>
+            </div>
+          </div>
         </div>
+
         {/* Banner-Text-ENDS */}
         {/* Banner-Text-ENDS */}
+        {/* Banner-ICON-STARTS*/}
+        {/* Banner-ICON-STARTS */}
+        <div className="down-arrow-icon text-center">
+          <img src={icon} alt="" height="62" width="62" />
+        </div>
+
+        {/* Banner-ICON-ENDS*/}
+        {/* Banner-ICON-ENDS */}
       </div>
       {/* Banner-Image-Ends */}
       {/* Banner-Image-Ends */}

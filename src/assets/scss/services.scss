@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-wrapper {
+  .wrapper {
+    .service-section {
+      background: #113c62;
+      color: white;
+      display: flex;
+      .service-heading {
+        width: 20%;
+      }
+      .service-details {
+        .service-image {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

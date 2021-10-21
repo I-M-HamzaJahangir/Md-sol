@@ -1,41 +1,81 @@
+* {
+  box-sizing: border-box;
+}
 .banner-img {
   background: url("../images/Main-banner.jpg");
   height: 100vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  .text-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    .left-section-text {
-      border: 10px solid rgba(34, 32, 32, 0.5);
-      border-right: none;
-      align-self: center;
-      text-align: center;
-      h1 {
-        font-family: poppins-bold;
+  .navbar-toggler-icon {
+    height: 16px;
+    width: 20px;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .setNavWidth {
+    width: 81%;
+    .logo-img {
+      width: 90px;
+    }
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    .left-text-section {
+      width: 50%;
+      .border-top-text {
         color: white;
-        font-size: 170px;
+        font-family: "rubik-medium";
+        font-size: 16px;
+        text-align: right;
+        letter-spacing: 1px;
+        word-spacing: 2.5px;
+        margin-right: 5px;
+      }
+      .border-bottom-text {
+        color: white;
+        font-family: "rubik-medium";
+        font-size: 16px;
+        text-align: right;
+        letter-spacing: 1.2px;
+        word-spacing: 4px;
+        margin-right: 5px;
+      }
+      .left-heading {
+        width: fit-content;
+        margin-left: auto;
+        border: 10px solid rgba(34, 32, 32, 0.5);
+        border-right: none;
+        padding: 5px 15px 5px 50px;
+        h1 {
+          font-size: 120px;
+          font-family: poppins-bold;
+          color: white;
+        }
       }
     }
-
-    .right-section-text {
-      align-self: center;
-      border: 15px solid white;
-      border-left: none;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      h1 {
-        font-family: poppins-bold;
-        color: white;
-        font-size: 77px;
-        text-align: center;
-        // padding-right: 50px;
+    .right-text-section {
+      width: 50%;
+      .right-heading {
+        border: 18px solid #fff;
+        border-left: none;
+        width: fit-content;
+        padding: 35px 50px 35px 20px;
+        h1 {
+          font-size: 45px;
+          font-family: poppins-bold;
+          color: white;
+        }
       }
     }
+  }
+  .down-arrow-icon {
+    cursor: pointer;
   }
 }
