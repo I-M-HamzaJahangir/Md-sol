@@ -1,0 +1,27 @@
+.recent-work {
+  .heading {
+    font-family: "raleway-medium";
+    font-size: 46px;
+    color: #13436d;
+    text-align: center;
+    padding-top: 50px;
+  }
+  hr {
+    width: 5%;
+    margin: auto;
+    color: #77bf43;
+    opacity: 1;
+    height: 10px;
+    border: 1px solid #77bf43;
+    border-radius: 5px;
+  }
+  .description-text {
+    font-family: "poppins-regular";
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+}

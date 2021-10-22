@@ -5,16 +5,72 @@
 }
 .main-wrapper {
   .wrapper {
+    .box-color {
+      background: #6bac3c !important;
+    }
     .service-section {
       background: #113c62;
       color: white;
       display: flex;
+      padding: 0;
+      // justify-content: space-between;
       .service-heading {
-        width: 20%;
+        width: 30%;
+        text-align: right;
+        overflow: hidden !important;
+
+        h1 {
+          font-family: "raleway-medium";
+          font-size: 22px;
+          writing-mode: vertical-rl;
+          transform: rotate(-180deg);
+          padding-bottom: 50px;
+          padding-right: 45px;
+          line-height: 1em;
+        }
+        .numbers {
+          text-align: left;
+          writing-mode: vertical-lr;
+          margin-left: -30px;
+          margin-top: 45px;
+          opacity: 0.3;
+          h2 {
+            font-family: poppins-light;
+            font-size: 70px;
+          }
+        }
+        // .numberOne {
+        // }
+        // .numberTwo {
+        // }
+        .numberThree {
+          margin-top: 55px;
+        }
+        .numberFour {
+          margin-top: 135px;
+        }
+        .numberFive {
+          margin-top: 70px;
+        }
+        .numberSix {
+          margin-top: 30px;
+        }
       }
       .service-details {
+        width: 70%;
+        justify-items: flex-end;
         .service-image {
-          width: 80%;
+          text-align: center;
+          img {
+            padding-top: 50px;
+            width: 100%;
+          }
+        }
+        .service-text-descr {
+          width: 90%;
+          padding-top: 30px;
+          font-size: 10px;
+          font-family: "poppins-regular";
         }
       }
     }

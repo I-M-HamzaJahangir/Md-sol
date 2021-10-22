@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/scss/whoweare.scss";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 const WhoWeAre = () => {

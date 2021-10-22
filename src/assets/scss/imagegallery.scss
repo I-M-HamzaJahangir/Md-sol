@@ -1,0 +1,99 @@
+.image-gallery-wrapper {
+  .first-row-images {
+    // margin: 0px;
+    .layout {
+      margin: 10px;
+    }
+    .first-row {
+      margin: 0px;
+    }
+    .cols {
+      // margin: 10px 10px;
+      // padding: 0px;
+      padding: 10px;
+    }
+    .image-one {
+      background: url("../images/Work/1.jpg");
+      background-position: left center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+      // padding-left: 0;
+      // padding-right: 0;
+    }
+    .image-two {
+      background: url("../images/Work/2.jpg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    .image-three {
+      background: url("../images/Work/3.jpg");
+      background-position: left center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    .image-four {
+      background: url("../images/Work/4-c.jpg");
+      background-position: left center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    .image-five {
+      background: url("../images/Work/8.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 20px;
+      height: 200px;
+    }
+    .image-six {
+      background: url("../images/Work/5.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+      height: 200px;
+    }
+    .image-seven {
+      background: url("../images/Work/9.jpg");
+      background-position: 30% 70%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    .image-eight {
+      background: url("../images/Work/6.jpg");
+      background-position: 53% 47%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+    .image-nine {
+      background: url("../images/Work/2.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 20px;
+      height: 200px;
+    }
+    .image-ten {
+      background: url("../images/Work/7.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 20px;
+      height: 200px;
+    }
+    .image-eleven {
+      background: url("../images/Work/11.jpg");
+      background-position: 53% 47%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+    }
+  }
+}

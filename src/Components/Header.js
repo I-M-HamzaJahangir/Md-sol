@@ -1,5 +1,4 @@
 import React from "react";
-import "../assets/scss/header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
@@ -16,7 +15,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 const Header = () => {
   return (
-    <div>
+    <div className="main-header">
       {/* Banner-Image-Start */}
       {/* Banner-Image-Start */}
       <div className="banner-img">
