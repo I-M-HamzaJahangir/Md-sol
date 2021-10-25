@@ -8,34 +8,29 @@ const ImageGallery = () => {
         <Container fluid>
           {/* first row */}
           <Row className="first-row">
-            {/* <div className=""> */}
-            <Col lg={3} className="cols">
+            <Col lg={3}>
               <div className="image-one"></div>
             </Col>
-            {/* <div className=""> */}
-            <Col md={6} className="cols">
+            <Col md={6}>
               <div className="image-two"></div>
             </Col>
-            {/* </div> */}
-            {/* <div className=""> */}
-            <Col lg={3} className="cols">
+            <Col lg={3}>
               <div className="image-three"></div>
             </Col>
-            {/* </div> */}
           </Row>
           {/* second row */}
           <Row>
-            <Col lg={3} className="">
+            <Col lg={3}>
               {/* first nested row */}
               <Row>
-                <div className="layout">
+                <div>
                   <Col className="image-four"></Col>
                 </div>
               </Row>
               {/* first nested row */}
               {/* second nested row */}
               <Row>
-                <div className="layout">
+                <div>
                   <Col className="image-five"></Col>
                 </div>
               </Row>
@@ -45,28 +40,28 @@ const ImageGallery = () => {
             {/* mid column */}
             <Col lg={6}>
               <Row>
-                <Col className="">
+                <Col>
                   <Row>
-                    <div className="layout">
+                    <div>
                       <Col className="image-six"></Col>
                     </div>
                   </Row>
                   <Row>
-                    <div className="layout">
+                    <div>
                       <Col className="image-seven"></Col>
                     </div>
                   </Row>
                 </Col>
-                <Col className="">
+                <Col>
                   <Row>
-                    <div className="layoyt">
+                    <div>
                       <Col className="image-eight"></Col>
                     </div>
                   </Row>
                   {/* first nested row */}
                   {/* second nested row */}
                   <Row>
-                    <div className="layout">
+                    <div>
                       <Col className="image-nine"></Col>
                     </div>
                   </Row>
@@ -75,14 +70,14 @@ const ImageGallery = () => {
             </Col>
             {/* mid-coloumn end */}
 
-            <Col lg={3} className="">
+            <Col lg={3}>
               <Row>
-                <div className="layout">
+                <div>
                   <Col className="image-ten"></Col>
                 </div>
               </Row>
               <Row>
-                <div className="layout">
+                <div>
                   <Col className="image-eleven"></Col>
                 </div>
               </Row>

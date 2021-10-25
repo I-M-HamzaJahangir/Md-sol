@@ -1,0 +1,79 @@
+.teem-wrapper {
+  .main-heading {
+    font-family: "raleway-medium";
+    font-size: 46px;
+    text-align: center;
+    color: #113c62;
+    padding-top: 40px;
+  }
+  hr {
+    width: 5%;
+    margin: auto;
+    color: #77bf43;
+    border: 1px solid #77bf43;
+    opacity: 1;
+  }
+  .text-para {
+    font-family: "poppins-light";
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .box-wrapper {
+    display: flex;
+    .title {
+      font-family: "raleway-bold";
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+    .sub-title {
+      font-family: "raleway-semibold";
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+    .about-section {
+      font-family: "poppins-regular";
+      font-size: 14px;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      p {
+        width: 88%;
+        margin-right: auto;
+      }
+    }
+    .box-1 {
+      background: url("../images/team/team-zeeshan.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      flex-basis: 25%;
+      flex-grow: 0;
+    }
+    .box-2 {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      flex-basis: 25%;
+      flex-grow: 0;
+    }
+    .box-2:hover {
+      background: #154b7b;
+      color: white;
+    }
+    .box-3 {
+      background: url("../images/team/team-nadeem.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      flex-basis: 25%;
+      flex-grow: 0;
+    }
+    .box-4 {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      flex-basis: 25%;
+      flex-grow: 0;
+    }
+  }
+}

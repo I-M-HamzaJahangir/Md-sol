@@ -1,0 +1,35 @@
+.web-agency-wrapper {
+  .banner-image {
+    background: url("../images/passion-banner.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    .main-heading {
+      font-family: "raleway-semibold";
+      font-size: 58px;
+      line-height: 1em;
+    }
+    .sub-heading {
+      font-family: "raleway-semibold";
+      font-size: 32px;
+      line-height: 1em;
+      padding-top: 10px;
+    }
+    hr {
+      width: 5%;
+      opacity: 1;
+      color: #77bf43;
+      border: 1px solid #77bf43;
+    }
+    .first-para,
+    .second-para {
+      font-family: "poppins-light";
+      font-size: 14px;
+      width: 42%;
+    }
+  }
+}

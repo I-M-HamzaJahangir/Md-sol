@@ -4,7 +4,9 @@ import WhoWeAre from "./Components/WhoWeAre";
 import Services from "./Components/Services";
 import RecentWork from "./Components/RecentWork";
 import ImageGallery from "./Components/ImageGallery";
-
+import ClientSlider from "./Components/ClientSlider";
+import WebAgency from "./Components/WebAgency";
+import Teem from "./Components/Teem";
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,10 @@ function App() {
       <Services />
       <RecentWork />
       <ImageGallery />
+      <ClientSlider />
+      <WebAgency />
+      <Teem />
+      <team />
     </div>
   );
 }
