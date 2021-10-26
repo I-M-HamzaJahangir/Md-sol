@@ -1,0 +1,37 @@
+.map-section-wrapper {
+  margin-top: 50px;
+  .flex-container {
+    display: flex;
+    .text-section {
+      background: #77bf43;
+      width: 50%;
+      color: white;
+      padding-left: 15%;
+      padding-bottom: 50px;
+      .logo {
+        padding-top: 50px;
+      }
+      .text-para {
+        font-family: "poppins-regular";
+        font-size: 14px;
+        width: 80%;
+        padding-top: 20px;
+      }
+      span {
+        font-family: "poppins-semibold";
+        font-size: 12px;
+      }
+      p {
+        font-family: "poppins-regular";
+        font-size: 16px;
+      }
+    }
+    .map-section {
+      width: 50%;
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

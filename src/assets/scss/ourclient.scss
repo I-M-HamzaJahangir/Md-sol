@@ -1,0 +1,33 @@
+.client-wrapper {
+  .heading-text {
+    font-family: "raleway-medium";
+    font-size: 46px;
+    text-align: center;
+    color: #113c62;
+    padding-top: 30px;
+  }
+  hr {
+    width: 5%;
+    color: #77bf43;
+    border: 2px solid #77bf43;
+    opacity: 1;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .desc-text {
+    text-align: center;
+    padding-top: 15px;
+    font-family: "poppins-regular";
+    font-size: 14px;
+  }
+  .flex-container {
+    display: flex;
+    width: 81%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    .flex-item {
+      width: 110px;
+    }
+  }
+}

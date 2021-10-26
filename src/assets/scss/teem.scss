@@ -21,6 +21,7 @@
   }
   .box-wrapper {
     display: flex;
+    flex-wrap: wrap;
     .title {
       font-family: "raleway-bold";
       font-size: 22px;
@@ -41,39 +42,41 @@
         margin-right: auto;
       }
     }
-    .box-1 {
-      background: url("../images/team/team-zeeshan.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      flex-basis: 25%;
-      flex-grow: 0;
-    }
-    .box-2 {
+    .text-box {
       padding-top: 20px;
       padding-left: 20px;
       padding-bottom: 20px;
       flex-basis: 25%;
-      flex-grow: 0;
     }
-    .box-2:hover {
+    .text-box:hover {
       background: #154b7b;
       color: white;
     }
+    .image-box {
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      flex-basis: 25%;
+    }
+
+    .box-1 {
+      background: url("../images/team/team-zeeshan.jpg");
+    }
+
     .box-3 {
       background: url("../images/team/team-nadeem.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      flex-basis: 25%;
-      flex-grow: 0;
     }
-    .box-4 {
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-bottom: 20px;
-      flex-basis: 25%;
-      flex-grow: 0;
+    .box-6 {
+      background: url("../images/team/team-waqas.jpg");
+    }
+    .box-8 {
+      background: url("../images/team/team-sikandar.jpg");
+    }
+    .box-9 {
+      background: url("../images/team/team-shaz.jpg");
+    }
+    .box-11 {
+      background: url("../images/team/team-raweewan.jpg");
     }
   }
 }

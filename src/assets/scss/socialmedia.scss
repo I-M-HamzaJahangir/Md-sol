@@ -1,0 +1,15 @@
+.footer-sec-wrapper {
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 20px;
+  }
+  .copy-right {
+    text-align: center;
+    font-family: "poppins-regular";
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}

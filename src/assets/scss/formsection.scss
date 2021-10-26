@@ -1,0 +1,55 @@
+.form-section-wrapper {
+  background: #154b7b;
+  padding-bottom: 50px;
+  .heading {
+    font-family: "raleway-medium";
+    font-size: 46px;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+  }
+  hr {
+    width: 5%;
+    color: #77bf43;
+    border: 2px solid #77bf43;
+    opacity: 1;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .form-section {
+    padding-top: 40px;
+    width: 50%;
+    margin: auto;
+    color: white;
+
+    .input-style {
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      border-radius: 0;
+      padding-left: 0;
+    }
+    .input-style:focus {
+      box-shadow: none;
+    }
+    ::placeholder {
+      color: white;
+      font-family: "poppins-regular";
+      font-size: 16px;
+    }
+    .submit-button {
+      text-align: center;
+      margin-top: 10px;
+      Button {
+        background: #77bf43;
+        font-size: 14px;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        padding: 10px 40px;
+        border-radius: 0;
+      }
+    }
+  }
+}
