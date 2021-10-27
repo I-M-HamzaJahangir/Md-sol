@@ -3,11 +3,14 @@ import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 const WhoWeAre = () => {
   return (
-    <div>
+    <div className="whoweare-wrapper">
       <Container fluid>
         <Row>
-          <Col lg={6} md={6} sm={12} className="image-section"></Col>
-          <Col lg={6} md={6} sm={12} className="text-section">
+          {/* Image Column Starts */}
+          <Col lg={6} md={12} sm={12} xs={12} className="image-section"></Col>
+          {/* Image Column Ends */}
+          {/* Text Column Starts */}
+          <Col lg={6} md={12} sm={12} xs={12} className="text-section">
             <div className="heading">
               <h1>
                 A Web Agency <br /> Focused On
@@ -37,6 +40,7 @@ const WhoWeAre = () => {
               </p>
             </div>
           </Col>
+          {/* Text Column Ends */}
         </Row>
       </Container>
     </div>

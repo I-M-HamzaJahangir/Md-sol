@@ -14,9 +14,9 @@ import SocialMedia from "./Components/SocialMedia";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <WhoWeAre />
-      <Services />
+      {/* <Services />
       <RecentWork />
       <ImageGallery />
       <ClientSlider />
@@ -25,7 +25,7 @@ function App() {
       <OurClient />
       <Map />
       <FormSection />
-      <SocialMedia />
+      <SocialMedia /> */}
     </div>
   );
 }
