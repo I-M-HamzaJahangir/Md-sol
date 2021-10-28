@@ -32,9 +32,9 @@ const ImageGallery = () => {
       <div className="first-row-images">
         <Container fluid>
           <Gallery>
-            {/* first row */}
+            {/* first row start */}
             <Row className="first-row">
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={12} xs={12}>
                 <div className="image-one">
                   <Item
                     original={img1}
@@ -54,7 +54,7 @@ const ImageGallery = () => {
                 </div>
               </Col>
 
-              <Col md={6}>
+              <Col lg={6} md={6} sm={12} xs={12}>
                 <div>
                   <Item original={img2} width="960" height="540">
                     {({ ref, open }) => (
@@ -68,7 +68,7 @@ const ImageGallery = () => {
                   </Item>
                 </div>
               </Col>
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={12} xs={12}>
                 <div className="image-one">
                   <Item original={img3} width="960" height="540">
                     {({ ref, open }) => (
@@ -83,9 +83,10 @@ const ImageGallery = () => {
                 </div>
               </Col>
             </Row>
-            {/* second row */}
-            <Row>
-              <Col lg={3}>
+            {/* first row end */}
+            {/* second row start */}
+            <Row className="second-row">
+              <Col lg={3} md={3} sm={12} xs={12}>
                 {/* first nested row */}
                 <Row>
                   <div className="mt-3">
@@ -121,75 +122,84 @@ const ImageGallery = () => {
               </Col>
 
               {/* mid column */}
-              <Col lg={6}>
+              <Col lg={6} md={6} sm={12} xs={12}>
                 <Row>
-                  <Col>
-                    <Row>
-                      <div className="mt-3">
-                        <Item original={img5} width="960" height="540">
-                          {({ ref, open }) => (
-                            <img
-                              ref={ref}
-                              onClick={open}
-                              src={thumbnail5}
-                              className="img-fluid"
-                            />
-                          )}
-                        </Item>
-                      </div>
-                    </Row>
-                    <Row>
-                      <div className="mt-3">
-                        <Item original={img9} width="960" height="540">
-                          {({ ref, open }) => (
-                            <img
-                              ref={ref}
-                              onClick={open}
-                              src={thumbnail9}
-                              className="img-fluid"
-                            />
-                          )}
-                        </Item>
-                      </div>
-                    </Row>
+                  {/* first-column-of-images start */}
+                  {/* first-column-of-images start */}
+                  <Col lg={6} md={6}>
+                    {/* <Row> */}
+                    <div className="mt-3 ">
+                      <Item original={img5} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail5}
+                            className="img-fluid"
+                          />
+                        )}
+                      </Item>
+                    </div>
+                    {/* </Row>
+                    <Row> */}
+                    <div className="mt-3">
+                      <Item original={img9} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail9}
+                            className="img-fluid"
+                          />
+                        )}
+                      </Item>
+                    </div>
+                    {/* </Row> */}
                   </Col>
-                  <Col>
-                    <Row>
-                      <div className="mt-3">
-                        <Item original={img6} width="960" height="540">
-                          {({ ref, open }) => (
-                            <img
-                              ref={ref}
-                              onClick={open}
-                              src={thumbnail6}
-                              className="img-fluid"
-                            />
-                          )}
-                        </Item>
-                      </div>
-                    </Row>
+                  {/* first-column-of-images Ends */}
+                  {/* first-column-of-images Ends */}
+                  {/* second-column-of-images starts */}
+                  {/* second-column-of-images starts */}
+
+                  <Col lg={6} md={6}>
+                    {/* <Row> */}
+                    <div className="mt-3">
+                      <Item original={img6} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail6}
+                            className="img-fluid"
+                          />
+                        )}
+                      </Item>
+                    </div>
+                    {/* </Row> */}
                     {/* first nested row */}
                     {/* second nested row */}
-                    <Row>
-                      <div className="mt-3">
-                        <Item original={img10} width="960" height="540">
-                          {({ ref, open }) => (
-                            <img
-                              ref={ref}
-                              onClick={open}
-                              src={thumbnail10}
-                              className="img-fluid"
-                            />
-                          )}
-                        </Item>
-                      </div>
-                    </Row>
+                    {/* <Row> */}
+                    <div className="mt-3">
+                      <Item original={img10} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail10}
+                            className="img-fluid"
+                          />
+                        )}
+                      </Item>
+                    </div>
+                    {/* </Row> */}
                   </Col>
+                  {/* second-column-of-images starts */}
+                  {/* second-column-of-images starts */}
                 </Row>
               </Col>
               {/* mid-coloumn end */}
 
-              <Col lg={3}>
+              <Col lg={3} md={3} sm={12} xs={12}>
                 <Row>
                   <div className="mt-3">
                     <Item original={img7} width="960" height="540">

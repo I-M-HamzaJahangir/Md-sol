@@ -6,6 +6,9 @@
     color: #13436d;
     text-align: center;
     padding-top: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
   hr {
     width: 5%;

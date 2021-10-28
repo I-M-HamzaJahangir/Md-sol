@@ -15,17 +15,17 @@ function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      <WhoWeAre />
-      {/* <Services />
+      {/* <WhoWeAre />
+      <Services />
       <RecentWork />
-      <ImageGallery />
-      <ClientSlider />
+      <ImageGallery /> */}
+      {/* <ClientSlider /> */}
       <WebAgency />
-      <Teem />
-      <OurClient />
-      <Map />
-      <FormSection />
-      <SocialMedia /> */}
+      {/* <Teem /> */}
+      {/* <OurClient /> */}
+      {/* <Map /> */}
+      {/* <FormSection /> */}
+      {/* <SocialMedia /> */}
     </div>
   );
 }

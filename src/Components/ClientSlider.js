@@ -25,13 +25,7 @@ const ClientSlider = () => {
       >
         <Carousel.Item>
           <div>
-            <div className="client-image">
-              {/* <Image
-              className="d-block image"
-              src={clientImage}
-              alt="First slide"
-            /> */}
-            </div>
+            <div className="client-image"></div>
           </div>
           <div className="client-name">Martin Joe</div>
           <div className="client-review">
@@ -41,20 +35,9 @@ const ClientSlider = () => {
               enough qualified to create successful mobile apps.
             </p>
           </div>
-
-          {/* <Carousel.Caption>
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
-          <div className="client-image">
-            {/* <Image
-              className="d-block image"
-              src={clientImage}
-              alt="Second slide"
-            /> */}
-          </div>
+          <div className="client-image"></div>
           <div className="client-name">Martin Joe</div>
           <div className="client-review">
             <p className="client-review-text">
@@ -63,19 +46,9 @@ const ClientSlider = () => {
               enough qualified to create successful mobile apps.
             </p>
           </div>
-          {/* <Carousel.Caption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
-          <div className="client-image">
-            {/* <Image
-              className="d-block image"
-              src={clientImage}
-              alt="Third slide"
-            /> */}
-          </div>
+          <div className="client-image"></div>
           <div className="client-name">Martin Joe</div>
           <div className="client-review">
             <p className="client-review-text">
@@ -84,12 +57,6 @@ const ClientSlider = () => {
               enough qualified to create successful mobile apps.
             </p>
           </div>
-          {/* <Carousel.Caption>
-            <h5>Third slide label</h5>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
       {/* Carousel Ends */}

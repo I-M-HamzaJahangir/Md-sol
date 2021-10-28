@@ -12,12 +12,18 @@
       font-family: "raleway-semibold";
       font-size: 58px;
       line-height: 1em;
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+      }
     }
     .sub-heading {
       font-family: "raleway-semibold";
       font-size: 32px;
       line-height: 1em;
       padding-top: 10px;
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
     }
     hr {
       width: 5%;
@@ -30,6 +36,9 @@
       font-family: "poppins-light";
       font-size: 14px;
       width: 42%;
+      @media screen and (max-width: 768px) {
+        width: 65%;
+      }
     }
   }
 }

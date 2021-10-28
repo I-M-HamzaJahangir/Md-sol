@@ -9,7 +9,7 @@ const Services = () => {
       <div className="wrapper">
         <Container fluid>
           <Row>
-            <Col lg={4} md={4} sm={6} xs={12} className="service-section ">
+            <Col lg={4} md={6} sm={6} xs={12} className="service-section ">
               <div className="service-heading ">
                 <h1>
                   WEBSITE
@@ -36,7 +36,7 @@ const Services = () => {
             </Col>
             <Col
               lg={4}
-              md={4}
+              md={6}
               sm={6}
               xs={12}
               className="service-section box-color"
@@ -64,7 +64,7 @@ const Services = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={4} md={4} sm={6} xs={12} className="service-section ">
+            <Col lg={4} md={6} sm={6} xs={12} className="service-section ">
               <div className="service-heading ">
                 <h1>
                   BLOCK CHAIN
@@ -89,15 +89,11 @@ const Services = () => {
                 </div>
               </div>
             </Col>
-            {/* <Col lg={4} md={4} sm={6} xs={12}></Col> */}
-            {/* <Col lg={4} md={4} sm={6} xs={12}></Col> */}
-          </Row>
-        </Container>
-        <Container fluid>
-          <Row>
+            {/* Second Row Starts */}
+            {/* Second Row Starts */}
             <Col
               lg={4}
-              md={4}
+              md={6}
               sm={6}
               xs={12}
               className="service-section box-color"
@@ -122,7 +118,7 @@ const Services = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={4} md={4} sm={6} xs={12} className="service-section">
+            <Col lg={4} md={6} sm={6} xs={12} className="service-section">
               <div className="service-heading ">
                 <h1>
                   Digital
@@ -148,7 +144,7 @@ const Services = () => {
             </Col>
             <Col
               lg={4}
-              md={4}
+              md={6}
               sm={6}
               xs={12}
               className="service-section box-color"

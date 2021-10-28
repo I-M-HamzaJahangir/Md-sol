@@ -7,5 +7,29 @@
     .image-one {
       height: 100%;
     }
+    .first-row {
+      @media screen and (min-width: 476px) and (max-width: 767px) {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .second-row {
+      @media screen and (min-width: 476px) and (max-width: 767px) {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      // .mobile-size {
+      //   @media screen and (min-width: 476px) and (max-width: 767px) {
+      //     img {
+      //       width: 100%;
+      //       height: auto;
+      //     }
+      //   }
+      // }
+    }
   }
 }

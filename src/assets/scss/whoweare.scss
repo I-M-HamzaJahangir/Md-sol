@@ -14,23 +14,28 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: auto;
     // Media Query For Image Start
     // Media Query For Image Start
-    @media screen and (max-width: 1024px) {
-      height: 45vh;
+    @media screen and (max-width: 991px) {
+      height: 400px;
     }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      height: 30vh;
+    @media screen and (max-width: 768px) {
+      // height: 35vh;
+      background-position: center center;
+    }
+    @media screen and (max-width: 575px) {
+      height: 350px;
       background-position: center center;
     }
     // Media Query For Image Ends
     // Media Query For Image Ends
   }
   .text-section {
+    padding: 50px 0px;
+    padding-left: 30px;
     .heading {
       font-family: "raleway-regular";
-      padding-top: 40px;
       padding-left: 20px;
       h1 {
         font-size: 42px;
@@ -59,13 +64,32 @@
         width: 80%;
         font-size: 14px;
         color: rgb(41, 37, 37);
+        padding-bottom: 10px;
       }
     }
     // Media Query For Text Start
     // Media Query For Text Start
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      h1 {
-        font-size: 26px;
+    @media screen and (min-width: 320px) and (max-width: 575px) {
+      padding-left: 0px;
+      .heading,
+      .subHeading,
+      .text-description {
+        text-align: center;
+        padding-left: 0px;
+      }
+      .heading h1 {
+        font-size: 30px;
+      }
+      .subHeading h6 {
+        font-size: 16px;
+      }
+      .text-description p {
+        margin: auto;
+      }
+
+      hr {
+        margin: auto;
+        margin-bottom: 10px;
       }
     }
     // Media Query For Text Ends

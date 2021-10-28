@@ -7,6 +7,9 @@
     text-align: center;
     color: white;
     padding-top: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
   }
   hr {
     width: 5%;
@@ -43,10 +46,13 @@
       font-family: "poppins-light";
       font-size: 20px;
       font-style: italic;
+      @media screen and (max-width: 575px) {
+        font-size: 14px;
+      }
     }
     .client-review {
       font-family: "poppins-light";
-      width: 60%;
+      width: 70%;
       margin: auto;
       font-style: italic;
       padding-top: 20px;
@@ -54,6 +60,9 @@
       .client-review-text {
         text-align: center;
         font-size: 16px;
+        @media screen and (max-width: 575px) {
+          font-size: 14px;
+        }
       }
     }
   }
