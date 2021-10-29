@@ -8,17 +8,25 @@ const SocialMedia = () => {
   return (
     <div className="footer-sec-wrapper">
       <div className="social-media-icons">
-        <div className="facebook">
-          <img src={fbook} alt="" />
+        <div className="facebook flex-item">
+          <a href="/#">
+            <img src={fbook} alt="" />
+          </a>
         </div>
-        <div className="twitter">
-          <img src={twitter} alt="" />
+        <div className="twitter flex-item">
+          <a href="/#">
+            <img src={twitter} alt="" />
+          </a>
         </div>
-        <div className="gplus">
-          <img src={gplus} alt="" />
+        <div className="gplus flex-item">
+          <a href="/#">
+            <img src={gplus} alt="" />
+          </a>
         </div>
-        <div className="insta">
-          <img src={insta} alt="" />
+        <div className="insta flex-item">
+          <a href="/#">
+            <img src={insta} alt="" />
+          </a>
         </div>
       </div>
       <div className="copy-right">

@@ -4,15 +4,10 @@ import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Offcanvas } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
-import { NavDropdown } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { FormControl } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import logo from "../assets/images/logo.png";
 import icon from "..//assets/images/down-arrow.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 const Header = () => {
   return (
     <div className="main-header">

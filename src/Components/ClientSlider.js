@@ -1,9 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { CarouselVariant } from "react-bootstrap/esm/Carousel";
-import { CarouselItem } from "react-bootstrap";
-import { Image } from "react-bootstrap";
-import clientImage from "../assets/images/clients/client.jpg";
 
 const ClientSlider = () => {
   return (

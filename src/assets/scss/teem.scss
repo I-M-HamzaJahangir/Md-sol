@@ -35,8 +35,8 @@
     .about-section {
       font-family: "poppins-regular";
       font-size: 14px;
-      padding-top: 20px;
-      padding-bottom: 40px;
+      padding-top: 10px;
+      padding-bottom: 20px;
       p {
         width: 88%;
         margin-right: auto;
@@ -58,6 +58,16 @@
       background-repeat: no-repeat !important;
       flex-basis: 25%;
     }
+    .parent-box {
+      display: flex;
+      width: 50%;
+      .img-width {
+        flex-basis: 50%;
+      }
+      .text-box-width {
+        flex-basis: 50%;
+      }
+    }
 
     .box-1 {
       background: url("../images/team/team-zeeshan.jpg");
@@ -77,6 +87,65 @@
     }
     .box-11 {
       background: url("../images/team/team-raweewan.jpg");
+    }
+    @media screen and (max-width: 768px) {
+      .text-box {
+        flex-basis: 50%;
+      }
+      .image-box {
+        flex-basis: 50%;
+      }
+      .parent-box {
+        width: 100%;
+        flex-direction: row-reverse;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      .text-box {
+        flex-basis: 100%;
+      }
+      .image-box {
+        flex-basis: 100%;
+        height: 280px;
+        background-position: top right !important;
+      }
+      .parent-box {
+        width: 100%;
+        flex-wrap: wrap;
+        .img-width {
+          flex-basis: 100%;
+        }
+        .text-box-width {
+          flex-basis: 100%;
+        }
+        .order-text {
+          order: 2;
+        }
+        .order-img {
+          order: 1;
+        }
+      }
+      .order-text-two {
+        order: 5;
+      }
+      .order-img-two {
+        order: 4;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    .text-para {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .main-heading {
+      font-size: 20px;
     }
   }
 }

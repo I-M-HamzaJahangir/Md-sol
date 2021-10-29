@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
@@ -47,6 +47,7 @@ const ImageGallery = () => {
                         ref={ref}
                         onClick={open}
                         src={thumbnail1}
+                        alt=""
                         className="img-fluid image-one"
                       />
                     )}
@@ -62,6 +63,7 @@ const ImageGallery = () => {
                         ref={ref}
                         onClick={open}
                         src={thumbnail2}
+                        alt=""
                         className="img-fluid"
                       />
                     )}
@@ -76,6 +78,7 @@ const ImageGallery = () => {
                         ref={ref}
                         onClick={open}
                         src={thumbnail3}
+                        alt=""
                         className="img-fluid image-one"
                       />
                     )}
@@ -96,6 +99,7 @@ const ImageGallery = () => {
                           ref={ref}
                           onClick={open}
                           src={thumbnail4}
+                          alt=""
                           className="img-fluid"
                         />
                       )}
@@ -112,6 +116,7 @@ const ImageGallery = () => {
                           ref={ref}
                           onClick={open}
                           src={thumbnail8}
+                          alt=""
                           className="img-fluid"
                         />
                       )}
@@ -135,6 +140,7 @@ const ImageGallery = () => {
                             ref={ref}
                             onClick={open}
                             src={thumbnail5}
+                            alt=""
                             className="img-fluid"
                           />
                         )}
@@ -149,6 +155,7 @@ const ImageGallery = () => {
                             ref={ref}
                             onClick={open}
                             src={thumbnail9}
+                            alt=""
                             className="img-fluid"
                           />
                         )}
@@ -170,6 +177,7 @@ const ImageGallery = () => {
                             ref={ref}
                             onClick={open}
                             src={thumbnail6}
+                            alt=""
                             className="img-fluid"
                           />
                         )}
@@ -186,6 +194,7 @@ const ImageGallery = () => {
                             ref={ref}
                             onClick={open}
                             src={thumbnail10}
+                            alt=""
                             className="img-fluid"
                           />
                         )}
@@ -208,6 +217,7 @@ const ImageGallery = () => {
                           ref={ref}
                           onClick={open}
                           src={thumbnail7}
+                          alt=""
                           className="img-fluid"
                         />
                       )}
@@ -222,6 +232,7 @@ const ImageGallery = () => {
                           ref={ref}
                           onClick={open}
                           src={thumbnail11}
+                          alt=""
                           className="img-fluid"
                         />
                       )}

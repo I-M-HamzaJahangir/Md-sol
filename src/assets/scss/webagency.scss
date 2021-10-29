@@ -37,8 +37,42 @@
       font-size: 14px;
       width: 42%;
       @media screen and (max-width: 768px) {
-        width: 65%;
+        width: 80%;
       }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    br {
+      display: none;
+    }
+    .banner-image {
+      padding-left: 0;
+      text-align: center;
+    }
+    // .text-sec {
+    //   width: 80%;
+    //   margin: auto;
+    // }
+    hr {
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .first-para,
+    .second-para {
+      margin: auto;
+    }
+    .main-heading {
+      font-size: 32px !important;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .sub-heading {
+      font-size: 16px !important;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 10px;
     }
   }
 }

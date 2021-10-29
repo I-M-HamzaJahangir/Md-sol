@@ -52,4 +52,20 @@
       }
     }
   }
+  @media screen and (max-width: 575px) {
+    .form-section {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .heading {
+      font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .heading {
+      font-size: 26px;
+    }
+  }
 }

@@ -14,18 +14,18 @@ import SocialMedia from "./Components/SocialMedia";
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      {/* <WhoWeAre />
+      <Header />
+      <WhoWeAre />
       <Services />
       <RecentWork />
-      <ImageGallery /> */}
-      {/* <ClientSlider /> */}
+      <ImageGallery />
+      <ClientSlider />
       <WebAgency />
-      {/* <Teem /> */}
-      {/* <OurClient /> */}
-      {/* <Map /> */}
-      {/* <FormSection /> */}
-      {/* <SocialMedia /> */}
+      <Teem />
+      <OurClient />
+      <Map />
+      <FormSection />
+      <SocialMedia />
     </div>
   );
 }

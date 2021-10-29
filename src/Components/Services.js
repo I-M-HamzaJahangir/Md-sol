@@ -22,7 +22,7 @@ const Services = () => {
               </div>
               <div className="service-details">
                 <div className="service-image">
-                  <img src={webImg} alt="Box-1 Image" />
+                  <img src={webImg} alt="Box-1" />
                 </div>
                 <div className="service-text-descr">
                   <p>
@@ -53,7 +53,7 @@ const Services = () => {
               </div>
               <div className="service-details">
                 <div className="service-image">
-                  <img src={mobImg} alt="Box-2 Image" />
+                  <img src={mobImg} alt="Box-2" />
                 </div>
                 <div className="service-text-descr">
                   <p>
@@ -77,7 +77,7 @@ const Services = () => {
               </div>
               <div className="service-details">
                 <div className="service-image">
-                  <img src={netImg} alt="Box-3 Image" />
+                  <img src={netImg} alt="Box-3" />
                 </div>
                 <div className="service-text-descr">
                   <p>
@@ -106,7 +106,7 @@ const Services = () => {
               </div>
               <div className="service-details">
                 <div className="service-image">
-                  <img src={webImg} alt="Box-1 Image" />
+                  <img src={webImg} alt="Box-1" />
                 </div>
                 <div className="service-text-descr">
                   <p>
@@ -131,7 +131,7 @@ const Services = () => {
               </div>
               <div className="service-details">
                 <div className="service-image">
-                  <img src={mobImg} alt="Box-2 Image" />
+                  <img src={mobImg} alt="Box-2" />
                 </div>
                 <div className="service-text-descr">
                   <p>
@@ -161,7 +161,7 @@ const Services = () => {
               </div>
               <div className="service-details">
                 <div className="service-image">
-                  <img src={netImg} alt="Box-3 Image" />
+                  <img src={netImg} alt="Box-3" />
                 </div>
                 <div className="service-text-descr">
                   <p>

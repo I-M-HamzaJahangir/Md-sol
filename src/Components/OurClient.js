@@ -14,29 +14,28 @@ const OurClient = () => {
       <hr />
       <div className="desc-text">
         Map where your photos were taken and discover local points of interest.
-        Map where your photos.
       </div>
       <div className="flex-container">
         <div className="flex-item">
           <img src={logo1} alt="" />
         </div>
         <div className="flex-item">
-          <img src={logo2} className="img-fluid" alt="LOGO_1" />
+          <img src={logo2} alt="LOGO_1" />
         </div>
         <div className="flex-item">
-          <img src={logo3} className="img-fluid" alt="LOGO_2" />
+          <img src={logo3} alt="LOGO_2" />
         </div>
         <div className="flex-item">
-          <img src={logo4} className="img-fluid" alt="LOGO_3" />
+          <img src={logo4} alt="LOGO_3" />
         </div>
         <div className="flex-item">
-          <img src={logo5} className="img-fluid" alt="LOGO_4" />
+          <img src={logo5} alt="LOGO_4" />
         </div>
         <div className="flex-item">
-          <img src={logo6} className="img-fluid" alt="LOGO_5" />
+          <img src={logo6} alt="LOGO_5" />
         </div>
         <div className="flex-item">
-          <img src={logo7} className="img-fluid" alt="LOGO_6" />
+          <img src={logo7} alt="LOGO_6" />
         </div>
       </div>
     </div>

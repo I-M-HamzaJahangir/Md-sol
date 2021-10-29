@@ -13,12 +13,10 @@
       color: white;
       display: flex;
       padding: 0;
-      // justify-content: space-between;
       .service-heading {
         width: 30%;
         text-align: right;
         overflow: hidden !important;
-
         h1 {
           font-family: "raleway-medium";
           font-size: 22px;
@@ -39,10 +37,7 @@
             font-size: 70px;
           }
         }
-        // .numberOne {
-        // }
-        // .numberTwo {
-        // }
+
         .numberThree {
           margin-top: 55px;
         }

@@ -1,4 +1,5 @@
 .client-wrapper {
+  // overflow: hidden;
   .heading-text {
     font-family: "raleway-medium";
     font-size: 46px;
@@ -22,12 +23,59 @@
   }
   .flex-container {
     display: flex;
-    width: 81%;
+    width: 85%;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     .flex-item {
-      width: 110px;
+      img {
+        width: 125px;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .flex-container {
+      .flex-item {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .flex-container {
+      width: 90%;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      .flex-item {
+        flex-basis: 33.3333%;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .flex-container {
+      width: 90%;
+      flex-wrap: wrap;
+      text-align: center;
+      .flex-item {
+        flex-basis: 50%;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .heading-text {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .heading-text {
+      font-size: 20px;
+    }
+    .desc-text {
+      width: 80%;
+      margin: auto;
+      font-size: 12px;
     }
   }
 }
