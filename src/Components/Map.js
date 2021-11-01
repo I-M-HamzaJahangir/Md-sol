@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.png";
 
 const Map = () => {
   return (
-    <div className="map-section-wrapper">
+    <div className="map-section-wrapper" id="contact">
       <div className="flex-container">
         <div className="text-section">
           <div className="logo">

@@ -4,28 +4,57 @@
 .main-header {
   .banner-img {
     background: url("../images/Main-banner.jpg");
-    height: 100vh;
+    // height: 100vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    .navbar-toggler-icon {
-      height: 16px;
-      width: 20px;
+    .icon {
+      color: white;
+    }
+    .navbar-brand {
+      padding-left: 20px;
+    }
+    .navbar-toggle-button {
+      padding-right: 20px;
+    }
+    .navbar {
+      background-color: transparent;
+      padding-bottom: 0px;
+    }
+    .colorChange {
+      background-color: rgba(21, 75, 123, 0.5);
     }
     .navbar-toggler:focus {
       box-shadow: none;
     }
-    .setNavWidth {
-      width: 81%;
-      .logo-img {
-        width: 90px;
-      }
+
+    .nav-links-background {
+      background: rgba(21, 75, 123, 0.2);
+      color: white !important;
+      padding-left: 0.75rem;
+      padding-bottom: 0.75rem;
     }
+    .logo-img {
+      width: 95px;
+    }
+
+    // .navbar-toggler-icon {
+    //   height: 16px;
+    //   width: 20px;
+    // }
+
+    // .setNavWidth {
+    //   width: 81%;
+    //   .logo-img {
+    //     width: 95px;
+    //   }
+    // }
+
     .wrapper {
       width: 80%;
       margin: auto;
-      height: 75vh;
+      height: 85vh;
+      // padding: 150px 0px;
       display: flex;
       align-items: center;
       .left-text-section {

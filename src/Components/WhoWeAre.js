@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 const WhoWeAre = () => {
   return (
-    <div className="whoweare-wrapper">
+    <div className="whoweare-wrapper" id="aboutUs">
       <Container fluid>
         <Row>
           {/* Image Column Starts */}

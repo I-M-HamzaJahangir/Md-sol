@@ -5,7 +5,7 @@ import mobImg from "../assets/images/about/2.jpg";
 import netImg from "../assets/images/about/3.jpg";
 const Services = () => {
   return (
-    <div className="main-wrapper">
+    <div className="main-wrapper" id="services">
       <div className="wrapper">
         <Container fluid>
           <Row>

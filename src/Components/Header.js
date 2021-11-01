@@ -2,50 +2,71 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
-import { Offcanvas } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 import logo from "../assets/images/logo.png";
 import icon from "..//assets/images/down-arrow.png";
+import { useState } from "react";
 
 const Header = () => {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <div className="main-header">
       {/* Banner-Image-Start */}
       {/* Banner-Image-Start */}
-      <div className="banner-img">
+      <div className="banner-img" id="home">
         {/* Navigation-Bar-Start */}
         {/* Navigation-Bar-Start */}
-        <Navbar bg="transparent" expand={false}>
-          <Container fluid className="setNavWidth">
-            <Navbar.Brand href="#">
-              <Image src={logo} className="logo-img" />
+        <Navbar
+          collapseOnSelect
+          className={colorChange ? "colorChange" : "navbar"}
+          expand="false"
+          fixed="top"
+        >
+          <Container fluid>
+            <Navbar.Brand className="navbar-brand" href="#home">
+              <img src={logo} className="logo-img" alt="" />
             </Navbar.Brand>
             <Navbar.Toggle
-              aria-controls="offcanvasNavbar"
-              className="border-0 small"
-            />
-            <Navbar.Offcanvas
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-              placement="end"
+              className="border-0 navbar-toggle-button"
+              aria-controls="responsive-navb
+              ar-nav"
             >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id="offcanvasNavbarLabel">
-                  Offcanvas
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">HOME</Nav.Link>
-                  <Nav.Link href="#action2">ABOUT</Nav.Link>
-                  <Nav.Link href="#action2">SERVICES</Nav.Link>
-                  <Nav.Link href="#action2">WORK</Nav.Link>
-                  <Nav.Link href="#action2">TEAM</Nav.Link>
-                </Nav>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
+              <i className="fas fa-bars icon"></i>{" "}
+            </Navbar.Toggle>
           </Container>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link className="nav-links-background" href="#home">
+                Home
+              </Nav.Link>
+              <Nav.Link className="nav-links-background" href="#aboutUs">
+                About Us
+              </Nav.Link>
+              <Nav.Link className="nav-links-background" href="#services">
+                Services
+              </Nav.Link>
+              <Nav.Link className="nav-links-background" href="#work">
+                Work
+              </Nav.Link>
+              <Nav.Link className="nav-links-background" href="#clients">
+                Clients
+              </Nav.Link>
+              <Nav.Link className="nav-links-background" href="#teem">
+                Our Teem
+              </Nav.Link>
+              <Nav.Link className="nav-links-background" href="#contact">
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
         {/* Nav-Bar-Ends */}
         {/* Nav-Bar-Ends */}
@@ -74,7 +95,9 @@ const Header = () => {
         {/* Banner-ICON-STARTS*/}
         {/* Banner-ICON-STARTS */}
         <div className="down-arrow-icon text-center">
-          <img src={icon} alt="" height="62" width="62" />
+          <a href="#aboutUs">
+            <img src={icon} alt="" height="62" width="62" />
+          </a>
         </div>
 
         {/* Banner-ICON-ENDS*/}
@@ -85,5 +108,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;

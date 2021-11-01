@@ -10,6 +10,7 @@ const FormSection = () => {
         <Form>
           <Form.Group className="mb-4" controlId="formBasicText">
             <Form.Control
+              required
               className="input-style"
               type="text"
               placeholder="Name*"
@@ -17,6 +18,7 @@ const FormSection = () => {
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Control
+              required
               className="input-style"
               type="email"
               placeholder="Email Address*"

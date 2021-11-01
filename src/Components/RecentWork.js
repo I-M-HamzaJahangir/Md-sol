@@ -2,7 +2,7 @@ import React from "react";
 
 const RecentWork = () => {
   return (
-    <div className="recent-work">
+    <div className="recent-work" id="work">
       <div className="heading">Recent WORK</div>
       <hr height="3px" />
       <div className="description-text">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Teem = () => {
   return (
-    <div className="teem-wrapper">
+    <div className="teem-wrapper" id="teem">
       <div className="main-heading">Meet the team</div>
       <hr />
       <div className="text-para">
