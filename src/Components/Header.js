@@ -5,10 +5,18 @@ import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import icon from "..//assets/images/down-arrow.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [colorChange, setColorchange] = useState(false);
+  const [menuColor, setMenuColor] = useState(false);
+  const mobileMenu = () => {
+    if (menuColor) {
+      setMenuColor(false);
+    } else {
+      setMenuColor(true);
+    }
+  };
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -16,7 +24,12 @@ const Header = () => {
       setColorchange(false);
     }
   };
-  window.addEventListener("scroll", changeNavbarColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbarColor);
+
+    return () => window.removeEventListener("scroll", changeNavbarColor);
+  }, []);
+  // window.addEventListener("scroll", changeNavbarColor);
   return (
     <div className="main-header">
       {/* Banner-Image-Start */}
@@ -26,7 +39,9 @@ const Header = () => {
         {/* Navigation-Bar-Start */}
         <Navbar
           collapseOnSelect
-          className={colorChange ? "colorChange" : "navbar"}
+          className={
+            colorChange ? "colorChange" : menuColor ? "background" : "navbar"
+          }
           expand="false"
           fixed="top"
         >
@@ -35,34 +50,63 @@ const Header = () => {
               <img src={logo} className="logo-img" alt="" />
             </Navbar.Brand>
             <Navbar.Toggle
+              onClick={mobileMenu}
               className="border-0 navbar-toggle-button"
               aria-controls="responsive-navb
               ar-nav"
             >
-              <i className="fas fa-bars icon"></i>{" "}
+              <i className="fas fa-bars icon"></i>
             </Navbar.Toggle>
           </Container>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link className="nav-links-background" href="#home">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#home"
+              >
                 Home
               </Nav.Link>
-              <Nav.Link className="nav-links-background" href="#aboutUs">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#aboutUs"
+              >
                 About Us
               </Nav.Link>
-              <Nav.Link className="nav-links-background" href="#services">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#services"
+              >
                 Services
               </Nav.Link>
-              <Nav.Link className="nav-links-background" href="#work">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#work"
+              >
                 Work
               </Nav.Link>
-              <Nav.Link className="nav-links-background" href="#clients">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#clients"
+              >
                 Clients
               </Nav.Link>
-              <Nav.Link className="nav-links-background" href="#teem">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#teem"
+              >
                 Our Teem
               </Nav.Link>
-              <Nav.Link className="nav-links-background" href="#contact">
+              <Nav.Link
+                className="nav-links-background"
+                onClick={mobileMenu}
+                href="#contact"
+              >
                 Contact
               </Nav.Link>
             </Nav>
@@ -74,6 +118,8 @@ const Header = () => {
         {/* Banner-Text-Start */}
 
         <div className="wrapper">
+          {/* left-section start */}
+          {/* left-section start */}
           <div className="left-text-section">
             <div className="border-top-text">WEB & MOBILE DEVELOPMENT</div>
             <div className="left-heading">
@@ -81,6 +127,11 @@ const Header = () => {
             </div>
             <div className="border-bottom-text">MARKETING & UX/UI DESIGN</div>
           </div>
+          {/* left-section ends */}
+          {/* left-section ends */}
+          {/* right-section start */}
+          {/* right-section start */}
+
           <div className="right-text-section">
             <div className="right-heading">
               <h1>
@@ -88,6 +139,8 @@ const Header = () => {
               </h1>
             </div>
           </div>
+          {/* right-section ends */}
+          {/* right-section ends */}
         </div>
 
         {/* Banner-Text-ENDS */}
