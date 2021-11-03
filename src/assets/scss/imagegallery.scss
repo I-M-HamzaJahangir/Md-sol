@@ -6,30 +6,52 @@
     }
     .image-one {
       height: 100%;
-    }
-    .first-row {
-      @media screen and (min-width: 476px) and (max-width: 767px) {
-        img {
-          width: 100%;
-          height: auto;
-        }
+      @media screen and (max-width: 767px) {
+        margin-top: 8px;
       }
     }
-    .second-row {
-      @media screen and (min-width: 476px) and (max-width: 767px) {
-        img {
-          width: 100%;
-          height: auto;
-        }
+  }
+  .first-row {
+    @media screen and (max-width: 767px) {
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 22px;
       }
-      // .mobile-size {
-      //   @media screen and (min-width: 476px) and (max-width: 767px) {
-      //     img {
-      //       width: 100%;
-      //       height: auto;
-      //     }
-      //   }
-      // }
+    }
+  }
+  .second-row {
+    @media screen and (min-width: 476px) and (max-width: 767px) {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .imgFourMargin {
+      margin-top: 16px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .mobileImgOne {
+      content: url("../images/Work/1.jpg");
+      background-position: 70% 30%;
+    }
+    .mobileImgThree {
+      content: url("../images/Work/3.jpg");
+    }
+    .mobileImgFour {
+      content: url("../images/Work/4-org.jpg");
+    }
+    .mobileImgNine {
+      content: url("../images/Work/9.jpg");
+    }
+    .mobileImgSix {
+      content: url("../images/Work/6.jpg");
+    }
+    .mobileImgEleven {
+      content: url("../images/Work/11-org.jpg");
     }
   }
 }

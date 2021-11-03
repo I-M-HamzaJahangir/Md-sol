@@ -17,7 +17,7 @@ const ClientSlider = () => {
           indicators={false}
           nextIcon={false}
           prevIcon={false}
-          interval={3000}
+          interval={2000}
           className="carouselColor"
         >
           <Carousel.Item>

@@ -1,10 +1,8 @@
 .slider-wrapper {
   background: #154b7b;
-  // overflow: hidden;
   scroll-margin: 49px;
   .mini-wrapper {
     overflow: hidden;
-
     .heading {
       font-family: "raleway-medium";
       font-size: 46px;
@@ -28,7 +26,6 @@
     }
     .carouselColor {
       background: #f7f7f7;
-      // z-index: 5;
       .client-image {
         background: url("../images/clients/client.jpg");
         background-position: 80% 20%;
@@ -40,10 +37,6 @@
         border-radius: 50px;
         border: 4px solid #f7f7f7;
         margin-top: -20px;
-        // .image {
-        //   width: 60px;
-        //   border-radius: 50px;
-        // }
       }
       .client-name {
         text-align: center;

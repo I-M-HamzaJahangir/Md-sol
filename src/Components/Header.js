@@ -6,7 +6,7 @@ import { Nav } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import icon from "..//assets/images/down-arrow.png";
 import { useState, useEffect } from "react";
-
+import Typewriter from "typewriter-effect";
 const Header = () => {
   const [colorChange, setColorchange] = useState(false);
   const [menuColor, setMenuColor] = useState(false);
@@ -29,7 +29,6 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", changeNavbarColor);
   }, []);
-  // window.addEventListener("scroll", changeNavbarColor);
   return (
     <div className="main-header">
       {/* Banner-Image-Start */}
@@ -121,11 +120,25 @@ const Header = () => {
           {/* left-section start */}
           {/* left-section start */}
           <div className="left-text-section">
-            <div className="border-top-text">WEB & MOBILE DEVELOPMENT</div>
+            <div className="border-top-text">
+              <Typewriter
+                onInit={(typewiter) => {
+                  typewiter.typeString("WEB & MOBILE DEVELOPMENT").start();
+                }}
+              />
+
+              {/* WEB & MOBILE DEVELOPMENT */}
+            </div>
             <div className="left-heading">
               <h1>WE</h1>
             </div>
-            <div className="border-bottom-text">MARKETING & UX/UI DESIGN</div>
+            <div className="border-bottom-text">
+              <Typewriter
+                onInit={(typewiter) => {
+                  typewiter.typeString("MARKETING & UX/UI DESIGN").start();
+                }}
+              />
+            </div>
           </div>
           {/* left-section ends */}
           {/* left-section ends */}

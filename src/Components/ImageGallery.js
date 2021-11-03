@@ -48,7 +48,7 @@ const ImageGallery = () => {
                         onClick={open}
                         src={thumbnail1}
                         alt=""
-                        className="img-fluid image-one"
+                        className="img-fluid image-one mobileImgOne"
                       />
                     )}
                   </Item>
@@ -56,7 +56,7 @@ const ImageGallery = () => {
               </Col>
 
               <Col lg={6} md={6} sm={12} xs={12}>
-                <div>
+                <div className=" image-one">
                   <Item original={img2} width="960" height="540">
                     {({ ref, open }) => (
                       <img
@@ -79,7 +79,7 @@ const ImageGallery = () => {
                         onClick={open}
                         src={thumbnail3}
                         alt=""
-                        className="img-fluid image-one"
+                        className="img-fluid image-one mobileImgThree"
                       />
                     )}
                   </Item>
@@ -100,7 +100,7 @@ const ImageGallery = () => {
                           onClick={open}
                           src={thumbnail4}
                           alt=""
-                          className="img-fluid"
+                          className="img-fluid mobileImgFour imgFourMargin"
                         />
                       )}
                     </Item>
@@ -156,7 +156,7 @@ const ImageGallery = () => {
                             onClick={open}
                             src={thumbnail9}
                             alt=""
-                            className="img-fluid"
+                            className="img-fluid mobileImgNine"
                           />
                         )}
                       </Item>
@@ -178,7 +178,7 @@ const ImageGallery = () => {
                             onClick={open}
                             src={thumbnail6}
                             alt=""
-                            className="img-fluid"
+                            className="img-fluid mobileImgSix"
                           />
                         )}
                       </Item>
@@ -233,7 +233,7 @@ const ImageGallery = () => {
                           onClick={open}
                           src={thumbnail11}
                           alt=""
-                          className="img-fluid"
+                          className="img-fluid mobileImgEleven"
                         />
                       )}
                     </Item>

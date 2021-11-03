@@ -7,6 +7,8 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    // height: 100vh;
+
     .icon {
       color: white;
     }
@@ -35,17 +37,20 @@
       color: white !important;
       padding-left: 2rem;
       padding-bottom: 0.75rem;
+      border-bottom: 1px solid white;
     }
     .logo-img {
       width: 95px;
     }
-
     .wrapper {
       width: 80%;
       margin: auto;
       height: 85vh;
       display: flex;
       align-items: center;
+      .Typewriter__cursor {
+        display: none;
+      }
       .left-text-section {
         width: 50%;
         .border-top-text {
@@ -54,7 +59,7 @@
           font-size: 16px;
           text-align: right;
           letter-spacing: 1px;
-          word-spacing: 2.5px;
+          word-spacing: 1.5px;
           margin-right: 5px;
         }
         .border-bottom-text {
