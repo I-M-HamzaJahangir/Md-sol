@@ -2,19 +2,18 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import Slide from "react-reveal/Slide";
-import Reveal from "react-reveal/Reveal";
-
 const WhoWeAre = () => {
   return (
-    <Slide left>
-      <div className="whoweare-wrapper" id="aboutUs">
-        <Container fluid>
-          <Row>
-            {/* Image Column Starts */}
-            <Col lg={6} md={12} sm={12} xs={12} className="image-section"></Col>
-            {/* Image Column Ends */}
-            {/* Text Column Starts */}
-            <Col lg={6} md={12} sm={12} xs={12} className="text-section">
+    <div className="whoweare-wrapper" id="aboutUs">
+      <Container fluid>
+        <Row>
+          {/* Image Column Starts */}
+          <Col lg={6} md={12} sm={12} xs={12} className="image-section"></Col>
+          {/* Image Column Ends */}
+          {/* Text Column Starts */}
+
+          <Col lg={6} md={12} sm={12} xs={12} className="text-section">
+            <Slide right>
               <div className="heading">
                 <h1>
                   A Web Agency <br /> Focused On
@@ -43,12 +42,13 @@ const WhoWeAre = () => {
                   So let us begin today, to strengthen your business right away!
                 </p>
               </div>
-            </Col>
-            {/* Text Column Ends */}
-          </Row>
-        </Container>
-      </div>
-    </Slide>
+            </Slide>
+          </Col>
+
+          {/* Text Column Ends */}
+        </Row>
+      </Container>
+    </div>
   );
 };
 

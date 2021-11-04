@@ -49,6 +49,10 @@
         padding: 10px 40px;
         border-radius: 0;
       }
+      Button:hover {
+        background: transparent;
+        outline: 1px solid white;
+      }
     }
   }
   @media screen and (max-width: 575px) {

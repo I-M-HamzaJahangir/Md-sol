@@ -6,6 +6,12 @@
 .main-wrapper {
   scroll-margin: 49px;
   .wrapper {
+    // .direction {
+    //   flex-direction: column;
+    // }
+    .col-width {
+      padding: 0px;
+    }
     .box-color {
       background: #6bac3c !important;
     }
@@ -13,7 +19,9 @@
       background: #113c62;
       color: white;
       display: flex;
-      padding: 0;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
       .service-heading {
         width: 30%;
         text-align: right;

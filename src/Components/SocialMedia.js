@@ -30,7 +30,7 @@ const SocialMedia = () => {
         </div>
       </div>
       <div className="copy-right">
-        <p>Copyrights © 2020 MDSOLTECH.com </p>
+        <p>Copyrights © 2021 MDSOLTECH.com </p>
       </div>
     </div>
   );

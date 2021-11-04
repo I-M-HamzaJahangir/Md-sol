@@ -1,6 +1,6 @@
 .teem-wrapper {
   scroll-margin: 49px;
-
+  overflow: hidden;
   .main-heading {
     font-family: "raleway-medium";
     font-size: 46px;
@@ -49,6 +49,7 @@
       padding-left: 20px;
       padding-bottom: 20px;
       flex-basis: 25%;
+      overflow: hidden;
     }
     .text-box:hover {
       background: #154b7b;
@@ -59,6 +60,7 @@
       background-size: cover !important;
       background-repeat: no-repeat !important;
       flex-basis: 25%;
+      overflow: hidden;
     }
     .parent-box {
       display: flex;
@@ -73,22 +75,29 @@
 
     .box-1 {
       background: url("../images/team/team-zeeshan.jpg");
+      flex-basis: 25%;
+      overflow: hidden;
     }
 
     .box-3 {
       background: url("../images/team/team-nadeem.jpg");
+      overflow: hidden;
     }
     .box-6 {
       background: url("../images/team/team-waqas.jpg");
+      overflow: hidden;
     }
     .box-8 {
       background: url("../images/team/team-sikandar.jpg");
+      overflow: hidden;
     }
     .box-9 {
       background: url("../images/team/team-shaz.jpg");
+      overflow: hidden;
     }
     .box-11 {
       background: url("../images/team/team-raweewan.jpg");
+      overflow: hidden;
     }
     @media screen and (max-width: 768px) {
       .text-box {

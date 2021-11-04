@@ -7,8 +7,6 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    // height: 100vh;
-
     .icon {
       color: white;
     }
@@ -21,6 +19,9 @@
     .navbar {
       background-color: transparent;
       padding-bottom: 0px;
+    }
+    .navbar-nav {
+      padding: 10px 0px 15px;
     }
     .colorChange {
       background-color: rgb(21, 75, 123);
@@ -35,8 +36,9 @@
     }
     .nav-links-background {
       color: white !important;
-      padding-left: 2rem;
-      padding-bottom: 0.75rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding-bottom: 0.5rem;
       border-bottom: 1px solid white;
     }
     .logo-img {

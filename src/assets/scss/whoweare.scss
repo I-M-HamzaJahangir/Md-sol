@@ -10,7 +10,7 @@
   $sm: 425px; //Mobile Large
   $xs: 375px; //Mobile Medium
   scroll-margin: 49px;
-
+  overflow: hidden;
   .image-section {
     background: url("../images/about/about.jpg");
     background-position: center;

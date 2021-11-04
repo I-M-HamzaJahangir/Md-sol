@@ -6,7 +6,9 @@ import { Nav } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import icon from "..//assets/images/down-arrow.png";
 import { useState, useEffect } from "react";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 const Header = () => {
   const [colorChange, setColorchange] = useState(false);
   const [menuColor, setMenuColor] = useState(false);
@@ -102,7 +104,7 @@ const Header = () => {
                 Our Teem
               </Nav.Link>
               <Nav.Link
-                className="nav-links-background"
+                className="nav-links-background mb-3"
                 onClick={mobileMenu}
                 href="#contact"
               >
@@ -119,39 +121,52 @@ const Header = () => {
         <div className="wrapper">
           {/* left-section start */}
           {/* left-section start */}
-          <div className="left-text-section">
-            <div className="border-top-text">
-              <Typewriter
-                onInit={(typewiter) => {
-                  typewiter.typeString("WEB & MOBILE DEVELOPMENT").start();
-                }}
-              />
-
-              {/* WEB & MOBILE DEVELOPMENT */}
+          <Zoom duration={1400}>
+            <div className="left-text-section">
+              <div className="border-top-text">
+                {/* <Typewriter
+                  onInit={(typewiter) => {
+                    typewiter
+                      .pauseFor(1500)
+                      .typeString("WEB & MOBILE DEVELOPMENT")
+                      .start();
+                  }}
+                /> */}
+                <Fade left delay={2000}>
+                  WEB & MOBILE DEVELOPMENT
+                </Fade>
+              </div>
+              <div className="left-heading">
+                <h1>WE</h1>
+              </div>
+              <div className="border-bottom-text">
+                {/* <Typewriter
+                  onInit={(typewiter) => {
+                    typewiter
+                      .pauseFor(1500)
+                      .typeString("MARKETING & UX/UI DESIGN")
+                      .start();
+                  }}
+                /> */}
+                <Fade right delay={2000}>
+                  MARKETING & UX/UI DESIGN
+                </Fade>
+              </div>
             </div>
-            <div className="left-heading">
-              <h1>WE</h1>
-            </div>
-            <div className="border-bottom-text">
-              <Typewriter
-                onInit={(typewiter) => {
-                  typewiter.typeString("MARKETING & UX/UI DESIGN").start();
-                }}
-              />
-            </div>
-          </div>
+          </Zoom>
           {/* left-section ends */}
           {/* left-section ends */}
           {/* right-section start */}
           {/* right-section start */}
-
-          <div className="right-text-section">
-            <div className="right-heading">
-              <h1>
-                LAUNCH <br /> BRANDS
-              </h1>
+          <Zoom duration={1400}>
+            <div className="right-text-section">
+              <div className="right-heading">
+                <h1>
+                  LAUNCH <br /> BRANDS
+                </h1>
+              </div>
             </div>
-          </div>
+          </Zoom>
           {/* right-section ends */}
           {/* right-section ends */}
         </div>

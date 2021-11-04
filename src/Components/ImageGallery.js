@@ -25,7 +25,8 @@ import thumbnail6 from "../assets/images/Work/thumbnail-6.jpg";
 import thumbnail10 from "../assets/images/Work/thumbnail-10.jpg";
 import thumbnail7 from "../assets/images/Work/thumbnail-7.jpg";
 import thumbnail11 from "../assets/images/Work/thumbnail-11.jpg";
-
+import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 const ImageGallery = () => {
   return (
     <div className="image-gallery-wrapper">
@@ -36,53 +37,59 @@ const ImageGallery = () => {
             <Row className="first-row">
               <Col lg={3} md={3} sm={12} xs={12}>
                 <div className="image-one">
-                  <Item
-                    original={img1}
-                    // thumbnail={thumbnail1}
-                    width="960"
-                    height="540"
-                  >
-                    {({ ref, open }) => (
-                      <img
-                        ref={ref}
-                        onClick={open}
-                        src={thumbnail1}
-                        alt=""
-                        className="img-fluid image-one mobileImgOne"
-                      />
-                    )}
-                  </Item>
+                  <Slide left duration={1500}>
+                    <Item
+                      original={img1}
+                      // thumbnail={thumbnail1}
+                      width="960"
+                      height="540"
+                    >
+                      {({ ref, open }) => (
+                        <img
+                          ref={ref}
+                          onClick={open}
+                          src={thumbnail1}
+                          alt=""
+                          className="img-fluid image-one mobileImgOne"
+                        />
+                      )}
+                    </Item>
+                  </Slide>
                 </div>
               </Col>
 
               <Col lg={6} md={6} sm={12} xs={12}>
                 <div className=" image-one">
-                  <Item original={img2} width="960" height="540">
-                    {({ ref, open }) => (
-                      <img
-                        ref={ref}
-                        onClick={open}
-                        src={thumbnail2}
-                        alt=""
-                        className="img-fluid"
-                      />
-                    )}
-                  </Item>
+                  <Fade bottom duration={2000}>
+                    <Item original={img2} width="960" height="540">
+                      {({ ref, open }) => (
+                        <img
+                          ref={ref}
+                          onClick={open}
+                          src={thumbnail2}
+                          alt=""
+                          className="img-fluid"
+                        />
+                      )}
+                    </Item>
+                  </Fade>
                 </div>
               </Col>
               <Col lg={3} md={3} sm={12} xs={12}>
                 <div className="image-one">
-                  <Item original={img3} width="960" height="540">
-                    {({ ref, open }) => (
-                      <img
-                        ref={ref}
-                        onClick={open}
-                        src={thumbnail3}
-                        alt=""
-                        className="img-fluid image-one mobileImgThree"
-                      />
-                    )}
-                  </Item>
+                  <Slide right duration={1500}>
+                    <Item original={img3} width="960" height="540">
+                      {({ ref, open }) => (
+                        <img
+                          ref={ref}
+                          onClick={open}
+                          src={thumbnail3}
+                          alt=""
+                          className="img-fluid image-one mobileImgThree"
+                        />
+                      )}
+                    </Item>
+                  </Slide>
                 </div>
               </Col>
             </Row>
@@ -93,74 +100,81 @@ const ImageGallery = () => {
                 {/* first nested row */}
                 <Row>
                   <div className="mt-3">
-                    <Item original={img4} width="960" height="540">
-                      {({ ref, open }) => (
-                        <img
-                          ref={ref}
-                          onClick={open}
-                          src={thumbnail4}
-                          alt=""
-                          className="img-fluid mobileImgFour imgFourMargin"
-                        />
-                      )}
-                    </Item>
+                    <Slide left duration={1500}>
+                      <Item original={img4} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail4}
+                            alt=""
+                            className="img-fluid mobileImgFour imgFourMargin"
+                          />
+                        )}
+                      </Item>
+                    </Slide>
                   </div>
                 </Row>
                 {/* first nested row */}
                 {/* second nested row */}
                 <Row>
                   <div className="mt-3">
-                    <Item original={img8} width="960" height="540">
-                      {({ ref, open }) => (
-                        <img
-                          ref={ref}
-                          onClick={open}
-                          src={thumbnail8}
-                          alt=""
-                          className="img-fluid"
-                        />
-                      )}
-                    </Item>
+                    <Slide left duration={1500}>
+                      <Item original={img8} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail8}
+                            alt=""
+                            className="img-fluid"
+                          />
+                        )}
+                      </Item>
+                    </Slide>
                   </div>
                 </Row>
                 {/* second nested row */}
               </Col>
 
-              {/* mid column */}
+              {/* mid column Starts */}
+              {/* mid column Starts */}
               <Col lg={6} md={6} sm={12} xs={12}>
                 <Row>
                   {/* first-column-of-images start */}
                   {/* first-column-of-images start */}
                   <Col lg={6} md={6}>
                     {/* <Row> */}
-                    <div className="mt-3 ">
-                      <Item original={img5} width="960" height="540">
-                        {({ ref, open }) => (
-                          <img
-                            ref={ref}
-                            onClick={open}
-                            src={thumbnail5}
-                            alt=""
-                            className="img-fluid"
-                          />
-                        )}
-                      </Item>
-                    </div>
-                    {/* </Row>
+                    <Fade bottom duration={2000}>
+                      <div className="mt-3 ">
+                        <Item original={img5} width="960" height="540">
+                          {({ ref, open }) => (
+                            <img
+                              ref={ref}
+                              onClick={open}
+                              src={thumbnail5}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          )}
+                        </Item>
+                      </div>
+                      {/* </Row>
                     <Row> */}
-                    <div className="mt-3">
-                      <Item original={img9} width="960" height="540">
-                        {({ ref, open }) => (
-                          <img
-                            ref={ref}
-                            onClick={open}
-                            src={thumbnail9}
-                            alt=""
-                            className="img-fluid mobileImgNine"
-                          />
-                        )}
-                      </Item>
-                    </div>
+                      <div className="mt-3">
+                        <Item original={img9} width="960" height="540">
+                          {({ ref, open }) => (
+                            <img
+                              ref={ref}
+                              onClick={open}
+                              src={thumbnail9}
+                              alt=""
+                              className="img-fluid mobileImgNine"
+                            />
+                          )}
+                        </Item>
+                      </div>
+                    </Fade>
                     {/* </Row> */}
                   </Col>
                   {/* first-column-of-images Ends */}
@@ -170,73 +184,80 @@ const ImageGallery = () => {
 
                   <Col lg={6} md={6}>
                     {/* <Row> */}
-                    <div className="mt-3">
-                      <Item original={img6} width="960" height="540">
-                        {({ ref, open }) => (
-                          <img
-                            ref={ref}
-                            onClick={open}
-                            src={thumbnail6}
-                            alt=""
-                            className="img-fluid mobileImgSix"
-                          />
-                        )}
-                      </Item>
-                    </div>
-                    {/* </Row> */}
-                    {/* first nested row */}
-                    {/* second nested row */}
-                    {/* <Row> */}
-                    <div className="mt-3">
-                      <Item original={img10} width="960" height="540">
-                        {({ ref, open }) => (
-                          <img
-                            ref={ref}
-                            onClick={open}
-                            src={thumbnail10}
-                            alt=""
-                            className="img-fluid"
-                          />
-                        )}
-                      </Item>
-                    </div>
-                    {/* </Row> */}
+                    <Fade bottom duration={2000}>
+                      <div className="mt-3">
+                        <Item original={img6} width="960" height="540">
+                          {({ ref, open }) => (
+                            <img
+                              ref={ref}
+                              onClick={open}
+                              src={thumbnail6}
+                              alt=""
+                              className="img-fluid mobileImgSix"
+                            />
+                          )}
+                        </Item>
+                      </div>
+                      {/* </Row> */}
+                      {/* first nested row */}
+                      {/* second nested row */}
+                      {/* <Row> */}
+                      <div className="mt-3">
+                        <Item original={img10} width="960" height="540">
+                          {({ ref, open }) => (
+                            <img
+                              ref={ref}
+                              onClick={open}
+                              src={thumbnail10}
+                              alt=""
+                              className="img-fluid"
+                            />
+                          )}
+                        </Item>
+                      </div>
+                      {/* </Row> */}
+                    </Fade>
                   </Col>
                   {/* second-column-of-images starts */}
                   {/* second-column-of-images starts */}
                 </Row>
               </Col>
-              {/* mid-coloumn end */}
+              {/* mid-coloumn ends */}
+              {/* mid-coloumn ends */}
 
               <Col lg={3} md={3} sm={12} xs={12}>
                 <Row>
                   <div className="mt-3">
-                    <Item original={img7} width="960" height="540">
-                      {({ ref, open }) => (
-                        <img
-                          ref={ref}
-                          onClick={open}
-                          src={thumbnail7}
-                          alt=""
-                          className="img-fluid"
-                        />
-                      )}
-                    </Item>
+                    <Slide right duration={1500}>
+                      <Item original={img7} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail7}
+                            alt=""
+                            className="img-fluid"
+                          />
+                        )}
+                      </Item>
+                    </Slide>
                   </div>
                 </Row>
                 <Row>
                   <div className="mt-3">
-                    <Item original={img11} width="960" height="540">
-                      {({ ref, open }) => (
-                        <img
-                          ref={ref}
-                          onClick={open}
-                          src={thumbnail11}
-                          alt=""
-                          className="img-fluid mobileImgEleven"
-                        />
-                      )}
-                    </Item>
+                    <Slide right duration={1500}>
+                      <Item original={img11} width="960" height="540">
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={thumbnail11}
+                            alt=""
+                            className="img-fluid mobileImgEleven"
+                          />
+                        )}
+                      </Item>
+                    </Slide>
                   </div>
                 </Row>
               </Col>
