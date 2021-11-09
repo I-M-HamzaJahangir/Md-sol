@@ -6,7 +6,6 @@ import { Nav } from "react-bootstrap";
 import logo from "../assets/images/logo.png";
 import icon from "..//assets/images/down-arrow.png";
 import { useState, useEffect } from "react";
-// import Typewriter from "typewriter-effect";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 const Header = () => {
@@ -124,14 +123,6 @@ const Header = () => {
           <Zoom duration={1400}>
             <div className="left-text-section">
               <div className="border-top-text">
-                {/* <Typewriter
-                  onInit={(typewiter) => {
-                    typewiter
-                      .pauseFor(1500)
-                      .typeString("WEB & MOBILE DEVELOPMENT")
-                      .start();
-                  }}
-                /> */}
                 <Fade left delay={2000}>
                   WEB & MOBILE DEVELOPMENT
                 </Fade>
@@ -140,14 +131,6 @@ const Header = () => {
                 <h1>WE</h1>
               </div>
               <div className="border-bottom-text">
-                {/* <Typewriter
-                  onInit={(typewiter) => {
-                    typewiter
-                      .pauseFor(1500)
-                      .typeString("MARKETING & UX/UI DESIGN")
-                      .start();
-                  }}
-                /> */}
                 <Fade right delay={2000}>
                   MARKETING & UX/UI DESIGN
                 </Fade>

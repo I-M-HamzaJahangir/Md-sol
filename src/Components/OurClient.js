@@ -20,39 +20,25 @@ const OurClient = () => {
         </div>
         <div className="flex-container">
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo1} alt="" />
-            {/* </LightSpeed> */}
           </div>
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo2} alt="LOGO_1" />
-            {/* </LightSpeed> */}
           </div>
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo3} alt="LOGO_2" />
-            {/* </LightSpeed> */}
           </div>
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo4} alt="LOGO_3" />
-            {/* </LightSpeed> */}
           </div>
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo5} alt="LOGO_4" />
-            {/* </LightSpeed> */}
           </div>
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo6} alt="LOGO_5" />
-            {/* </LightSpeed> */}
           </div>
           <div className="flex-item">
-            {/* <LightSpeed duration={1300}> */}
             <img src={logo7} alt="LOGO_6" />
-            {/* </LightSpeed> */}
           </div>
         </div>
       </LightSpeed>

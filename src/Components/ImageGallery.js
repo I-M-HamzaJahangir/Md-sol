@@ -38,12 +38,7 @@ const ImageGallery = () => {
               <Col lg={3} md={3} sm={12} xs={12}>
                 <div className="image-one">
                   <Slide left duration={1500}>
-                    <Item
-                      original={img1}
-                      // thumbnail={thumbnail1}
-                      width="960"
-                      height="540"
-                    >
+                    <Item original={img1} width="960" height="540">
                       {({ ref, open }) => (
                         <img
                           ref={ref}
@@ -144,7 +139,6 @@ const ImageGallery = () => {
                   {/* first-column-of-images start */}
                   {/* first-column-of-images start */}
                   <Col lg={6} md={6}>
-                    {/* <Row> */}
                     <Fade bottom duration={2000}>
                       <div className="mt-3 ">
                         <Item original={img5} width="960" height="540">
@@ -159,8 +153,7 @@ const ImageGallery = () => {
                           )}
                         </Item>
                       </div>
-                      {/* </Row>
-                    <Row> */}
+
                       <div className="mt-3">
                         <Item original={img9} width="960" height="540">
                           {({ ref, open }) => (
@@ -175,7 +168,6 @@ const ImageGallery = () => {
                         </Item>
                       </div>
                     </Fade>
-                    {/* </Row> */}
                   </Col>
                   {/* first-column-of-images Ends */}
                   {/* first-column-of-images Ends */}
@@ -183,7 +175,6 @@ const ImageGallery = () => {
                   {/* second-column-of-images starts */}
 
                   <Col lg={6} md={6}>
-                    {/* <Row> */}
                     <Fade bottom duration={2000}>
                       <div className="mt-3">
                         <Item original={img6} width="960" height="540">
@@ -198,10 +189,8 @@ const ImageGallery = () => {
                           )}
                         </Item>
                       </div>
-                      {/* </Row> */}
                       {/* first nested row */}
                       {/* second nested row */}
-                      {/* <Row> */}
                       <div className="mt-3">
                         <Item original={img10} width="960" height="540">
                           {({ ref, open }) => (
@@ -215,7 +204,6 @@ const ImageGallery = () => {
                           )}
                         </Item>
                       </div>
-                      {/* </Row> */}
                     </Fade>
                   </Col>
                   {/* second-column-of-images starts */}
